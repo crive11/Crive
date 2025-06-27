@@ -52,6 +52,11 @@ figure, header, nav, section, article, aside, footer, figcaption {
 
 /* ---- .grid-item ---- */
 
+.contact{
+  background-color: #4b8ef1;
+  color: #000;
+  border-radius: 15%;
+}
   .portfolio-section {
       padding: 60px 20px;
       background-color: #ffffff;
