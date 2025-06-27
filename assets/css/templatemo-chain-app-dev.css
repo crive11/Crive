@@ -52,6 +52,70 @@ figure, header, nav, section, article, aside, footer, figcaption {
 
 /* ---- .grid-item ---- */
 
+  .portfolio-section {
+      padding: 60px 20px;
+      background-color: #ffffff;
+      text-align: center;
+      position: relative;
+      z-index: 999;
+    }
+
+    .portfolio-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #4b8ef1;
+      
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .portfolio-item {
+      background-color: #ffffff;
+      border: 2px solid #cce0ff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 51, 102, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 51, 102, 0.2);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .portfolio-item .content {
+      padding: 20px;
+    }
+
+    .portfolio-item h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #003366;
+    }
+
+    .portfolio-item p {
+      font-size: 14px;
+      color: #336699;
+    }
+
+    @media (max-width: 500px) {
+      .portfolio-item img {
+        height: 150px;
+      }
+    }
+
 .grid-sizer,
 .grid-item {
   width: 50%;
